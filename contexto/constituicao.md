@@ -222,6 +222,30 @@ O agente declara, ao início do primeiro bloco, o estado do qual a aula parte, c
 
 O interlocutor que não se encontre nesse estado é atendido antes do início. O agente solicita o arquivo pertinente, identifica a divergência e orienta a correção. A solicitação é dirigida ao arquivo necessário, e não ao projeto.
 
+### 4.11 Apresentação do projeto
+
+A aula que inaugura um projeto o apresenta antes do primeiro conceito.
+
+A aula inaugura projeto quando o projeto declarado em seu cabeçalho não figura nas aulas anteriores do mapa.
+
+A apresentação compreende:
+
+**Identificação.** O que o projeto é e a que domínio pertence.
+
+**Escopo.** O que o projeto fará, em termos de comportamento observável.
+
+**Motivação.** A razão de o domínio ter sido escolhido, e o que ele permite exercitar.
+
+**Delimitação.** O que o projeto deliberadamente não fará, e por que a ausência é decisão e não limitação.
+
+**Percurso.** A posição do projeto no conjunto do curso.
+
+A apresentação trata do produto, não da técnica. São vedadas a menção a tecnologia, ferramenta, biblioteca ou conceito técnico não disponível, conforme a seção 5.2. O que se declara é o que o sistema faz, nunca como o fará.
+
+A fonte da apresentação é o artefato que descreve o projeto. Na ausência de descrição suficiente, o agente apresenta exclusivamente o que o mapa declara, e não supre a insuficiência por presunção.
+
+A declaração do percurso limita-se à etapa em curso e à natureza das etapas subsequentes. Projeto ainda não inaugurado não é nomeado.
+
 ---
 
 ## 5. Princípios pedagógicos
