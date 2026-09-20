@@ -26,7 +26,15 @@ O marcador `(r)` indica conceito tratado em nível de reconhecimento. A ausênci
 
 ## Etapa Fundamentos
 
-- **Projeto:** Simba — simulador bancário operado por diálogos do navegador
+- **Projeto:** Simba
+
+  O Simba é um simulador bancário operado por caixas de diálogo do navegador. Identifica quem o utiliza, apresenta um menu de operações, consulta saldo, registra depósitos e saques, e mantém o histórico das movimentações realizadas na sessão.
+  
+  O domínio bancário foi escolhido por três razões. É familiar a qualquer pessoa, o que dispensa a explicação do problema antes da explicação da solução. Suas operações exigem exatamente os fundamentos que a etapa constrói: decisão para validar valores, repetição para manter o menu ativo, agrupamento para organizar as operações. E o resultado é verificável sem critério subjetivo — o saldo está correto ou não está.
+  
+  O Simba não persiste dados, não autentica quem o utiliza e não se comunica com sistema algum. As caixas de diálogo substituem a interface porque construir interface exigiria conhecimento ainda indisponível, e o objeto desta etapa é o raciocínio de programação, não a apresentação.
+  
+  O Simba constitui o primeiro item do repositório de quem percorre o curso, e é publicado ao final da etapa seguinte.
 - **Ambiente:** Playground do TypeScript
 - **Comandos de sistema:** não
 
@@ -59,6 +67,18 @@ O marcador `(r)` indica conceito tratado em nível de reconhecimento. A ausênci
 ## `v0.1.0` — Arquitetura base e entrega contínua
 
 - **Projeto:** Gefina
+
+  O Gefina é um sistema de gestão de contas a receber. Registra os clientes de uma organização e as faturas emitidas contra esses clientes, e apresenta a visão consolidada da situação financeira que desses registros decorre. Destina-se ao uso interno de uma equipe: cada integrante mantém sua própria carteira de clientes, e todos visualizam os registros de toda a organização.
+  
+  O sistema compreende autenticação com sessão e proteção de rotas, cadastro e manutenção de clientes e de faturas, listagens com busca, ordenação e paginação, painel de indicadores consolidados, e administração das contas de acesso.
+  
+  O domínio foi escolhido porque impõe as exigências que um sistema em operação impõe, e cada exigência corresponde a uma competência a formar. A necessidade de identificar quem opera conduz à autenticação. A distinção entre o que cada integrante pode fazer conduz à autorização. O volume de registros conduz à recuperação parcial de dados. A dependência entre clientes e faturas conduz às restrições de integridade. Nenhuma dessas competências é exercitada em domínio artificial.
+  
+  O Gefina não possui cadastro público de usuários, recuperação de senha, envio de arquivo de imagem nem representação gráfica de séries temporais. As exclusões constam da especificação do produto, acompanhadas da razão de cada uma.
+  
+  O Gefina é construído em seis entregas sucessivas, cada uma concluída com uma versão publicada e funcional. Constitui o segundo item do repositório de quem percorre o curso, e a entrega final.
+  
+  A descrição completa do sistema — domínio, modelo de dados, permissões, regras de negócio, contrato da API, interface e dados iniciais — consta da especificação do produto, que é a fonte autoritativa de toda decisão a seu respeito.
 - **Ambiente:** Editor local
 - **Comandos de sistema:** sim, exceto aula 11
 - **Abertura de ciclo:** aula 11
