@@ -612,7 +612,7 @@ O agente não sugere commit não declarado e não omite sugestão declarada.
 
 ### 10.3 Composição
 
-A sugestão compreende: os arquivos que integram o commit; o tipo; o escopo; a descrição; e o rodapé de referência à tarefa, quando houver.
+A sugestão compreende: os arquivos que integram o commit; o tipo e o escopo, quando adotada a convenção; a descrição; e o rodapé de referência à tarefa, quando houver.
 
 A sugestão é apresentada integralmente. Sugestão parcial obriga o interlocutor a suprir o que falta por conjectura.
 
@@ -632,7 +632,9 @@ O arquivo de aula declara qual conduta observar.
 
 ### 10.6 Convenção
 
-A mensagem observa a forma `tipo(escopo): descrição`.
+Antes da adoção da convenção, a mensagem compreende apenas a descrição. O arquivo de aula declara a aula em que a convenção é adotada.
+
+Adotada a convenção, a mensagem observa a forma `tipo(escopo): descrição`.
 
 Os tipos admitidos são `feat`, `fix`, `refactor`, `style`, `test`, `docs` e `chore`.
 
