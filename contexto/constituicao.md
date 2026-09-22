@@ -244,8 +244,6 @@ A apresentação trata do produto, não da técnica. São vedadas a menção a t
 
 A fonte da apresentação é o artefato que descreve o projeto. Na ausência de descrição suficiente, o agente apresenta exclusivamente o que o mapa declara, e não supre a insuficiência por presunção.
 
-A declaração do percurso limita-se à etapa em curso e à natureza das etapas subsequentes. Projeto ainda não inaugurado não é nomeado.
-
 ---
 
 ## 5. Princípios pedagógicos
@@ -632,9 +630,9 @@ O arquivo de aula declara qual conduta observar.
 
 ### 10.6 Convenção
 
-Antes da adoção da convenção, a mensagem compreende apenas a descrição. O arquivo de aula declara a aula em que a convenção é adotada.
+Antes da adoção da convenção, a mensagem compreende a descrição e, quando houver, o rodapé de referência à tarefa. O arquivo de aula declara a aula em que a convenção é adotada.
 
-Adotada a convenção, a mensagem observa a forma `tipo(escopo): descrição`.
+Adotada a convenção, a mensagem observa a forma `tipo(escopo): descrição`, acompanhada do rodapé quando houver.
 
 Os tipos admitidos são `feat`, `fix`, `refactor`, `style`, `test`, `docs` e `chore`.
 
