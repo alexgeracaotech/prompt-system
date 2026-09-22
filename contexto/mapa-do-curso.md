@@ -27,16 +27,16 @@ O marcador `(r)` indica conceito tratado em nível de reconhecimento. A ausênci
 ## Etapa Fundamentos
 
 - **Projeto:** Simba
-
-  O Simba é um simulador bancário operado por caixas de diálogo do navegador. Identifica quem o utiliza, apresenta um menu de operações, consulta saldo, registra depósitos e saques, e mantém o histórico das movimentações realizadas na sessão.
-  
-  O domínio bancário foi escolhido por três razões. É familiar a qualquer pessoa, o que dispensa a explicação do problema antes da explicação da solução. Suas operações exigem exatamente os fundamentos que a etapa constrói: decisão para validar valores, repetição para manter o menu ativo, agrupamento para organizar as operações. E o resultado é verificável sem critério subjetivo — o saldo está correto ou não está.
-  
-  O Simba não persiste dados, não autentica quem o utiliza e não se comunica com sistema algum. As caixas de diálogo substituem a interface porque construir interface exigiria conhecimento ainda indisponível, e o objeto desta etapa é o raciocínio de programação, não a apresentação.
-  
-  O Simba constitui o primeiro item do repositório de quem percorre o curso, e é publicado ao final da etapa seguinte.
 - **Ambiente:** Playground do TypeScript
 - **Comandos de sistema:** não
+
+O Simba é um simulador bancário operado por caixas de diálogo do navegador. Identifica quem o utiliza, apresenta um menu de operações, consulta saldo, registra depósitos e saques, e mantém o histórico das movimentações realizadas na sessão.
+
+O domínio bancário foi escolhido por três razões. É familiar a qualquer pessoa, o que dispensa a explicação do problema antes da explicação da solução. Suas operações exigem exatamente os fundamentos que a etapa constrói: decisão para validar valores, repetição para manter o menu ativo, agrupamento para organizar as operações. E o resultado é verificável sem critério subjetivo — o saldo está correto ou não está.
+
+O Simba não persiste dados, não autentica quem o utiliza e não se comunica com sistema algum. As caixas de diálogo substituem a interface porque construir interface exigiria conhecimento ainda indisponível, e o objeto desta etapa é o raciocínio de programação, não a apresentação.
+
+O Simba constitui o primeiro item do repositório de quem percorre o curso, e é publicado ao final da etapa seguinte.
 
 | # | Tema | Conceitos |
 |---|---|---|
@@ -67,32 +67,32 @@ O marcador `(r)` indica conceito tratado em nível de reconhecimento. A ausênci
 ## `v0.1.0` — Arquitetura base e entrega contínua
 
 - **Projeto:** Gefina
-
-  O Gefina é um sistema de gestão de contas a receber. Registra os clientes de uma organização e as faturas emitidas contra esses clientes, e apresenta a visão consolidada da situação financeira que desses registros decorre. Destina-se ao uso interno de uma equipe: cada integrante mantém sua própria carteira de clientes, e todos visualizam os registros de toda a organização.
-  
-  O sistema compreende autenticação com sessão e proteção de rotas, cadastro e manutenção de clientes e de faturas, listagens com busca, ordenação e paginação, painel de indicadores consolidados, e administração das contas de acesso.
-  
-  O domínio foi escolhido porque impõe as exigências que um sistema em operação impõe, e cada exigência corresponde a uma competência a formar. A necessidade de identificar quem opera conduz à autenticação. A distinção entre o que cada integrante pode fazer conduz à autorização. O volume de registros conduz à recuperação parcial de dados. A dependência entre clientes e faturas conduz às restrições de integridade. Nenhuma dessas competências é exercitada em domínio artificial.
-  
-  O Gefina não possui cadastro público de usuários, recuperação de senha, envio de arquivo de imagem nem representação gráfica de séries temporais. As exclusões constam da especificação do produto, acompanhadas da razão de cada uma.
-  
-  O Gefina é construído em seis entregas sucessivas, cada uma concluída com uma versão publicada e funcional. Constitui o segundo item do repositório de quem percorre o curso, e a entrega final.
-  
-  A descrição completa do sistema — domínio, modelo de dados, permissões, regras de negócio, contrato da API, interface e dados iniciais — consta da especificação do produto, que é a fonte autoritativa de toda decisão a seu respeito.
 - **Ambiente:** Editor local
-- **Comandos de sistema:** sim, exceto aula 11
+- **Comandos de sistema:** sim
 - **Abertura de ciclo:** aula 11
 - **Encerramento de ciclo:** aula 17
 
+O Gefina é um sistema de gestão de contas a receber. Registra os clientes de uma organização e as faturas emitidas contra esses clientes, e apresenta a visão consolidada da situação financeira que desses registros decorre. Destina-se ao uso interno de uma equipe: cada integrante mantém sua própria carteira de clientes, e todos visualizam os registros de toda a organização.
+
+O sistema compreende autenticação com sessão e proteção de rotas, cadastro e manutenção de clientes e de faturas, listagens com busca, ordenação e paginação, painel de indicadores consolidados, e administração das contas de acesso.
+
+O domínio foi escolhido porque impõe as exigências que um sistema em operação impõe, e cada exigência corresponde a uma competência a formar. A necessidade de identificar quem opera conduz à autenticação. A distinção entre o que cada integrante pode fazer conduz à autorização. O volume de registros conduz à recuperação parcial de dados. A dependência entre clientes e faturas conduz às restrições de integridade. Nenhuma dessas competências é exercitada em domínio artificial.
+
+O Gefina não possui cadastro público de usuários, recuperação de senha, envio de arquivo de imagem nem representação gráfica de séries temporais. As exclusões constam da especificação do produto, acompanhadas da razão de cada uma.
+
+O Gefina é construído em seis entregas sucessivas, cada uma concluída com uma versão publicada e funcional. Constitui o segundo item do repositório de quem percorre o curso, e a entrega final.
+
+A descrição completa do sistema — domínio, modelo de dados, permissões, regras de negócio, contrato da API, interface e dados iniciais — consta da especificação do produto, que é a fonte autoritativa de toda decisão a seu respeito.
+
 | # | Tema | Conceitos |
 |---|---|---|
-| 11 | Levantamento de requisitos e modelagem conceitual | necessidade de negócio, contas a receber, requisito funcional, requisito não funcional, escopo e exclusão de escopo, entidade, atributo, relacionamento, cardinalidade, regra de negócio, dado armazenado e dado derivado, critério de aceite, comportamento observável, Markdown, título, ênfase, lista, bloco de código, link, README, milestone, issue, versionamento semântico, `MAJOR`, `MINOR`, `PATCH`, release |
+| 11 | Levantamento de requisitos e modelagem conceitual | necessidade de negócio, contas a receber, requisito funcional, requisito não funcional, escopo e exclusão de escopo, entidade, atributo, relacionamento, cardinalidade, regra de negócio, dado armazenado e dado derivado, critério de aceite, comportamento observável, Markdown, título, ênfase, lista, bloco de código, link, README, README do Simba, fluxo local-primeiro e fluxo remoto-primeiro, criação de repositório no GitHub com conteúdo inicial, `git clone`, milestone, issue, versionamento semântico, `MAJOR`, `MINOR`, `PATCH`, release |
 | 12 | Arquitetura cliente-servidor e protocolo HTTP | cliente e servidor, requisição e resposta, URL, esquema, host, porta, caminho, método HTTP, `GET`, `POST`, `PUT`, `DELETE`, cabeçalho, corpo, código de status, famílias 2xx, 4xx e 5xx, JSON, `Content-Type`, API, REST (r), painel de rede do navegador |
-| 13 | Node.js, módulos e servidor HTTP | Node.js, execução fora do navegador, instalação, `node`, ausência de `window` e de `alert`, `console.log`, módulo, `import`, `export`, `export default`, `import type`, npm, `package.json`, `npm init`, dependência, `npm install`, `node_modules`, `.gitignore`, script npm, execução direta de TypeScript, `--watch`, `tsc --noEmit`, `node:http`, `createServer`, `listen`, roteamento manual, `JSON.stringify` |
-| 14 | Express e estrutura da API | Express, instalação, `app`, roteamento por método e caminho, `req`, `res`, `res.json`, parâmetro de rota, middleware, `express.json`, ordem de execução, `Router`, separação de rotas em módulo, dados em memória, template literal, `type`, `interface`, propriedade opcional, união de literais |
+| 13 | Node.js, módulos e servidor HTTP | Node.js, execução fora do navegador, instalação, `node`, ausência de `window` e de `alert`, `console.log`, módulo, `import`, `export`, `export default`, `import type`, npm, `package.json`, `npm init`, dependência, `npm install`, `node_modules`, `.gitignore`, script npm, execução direta de TypeScript, `--watch`, `tsc --noEmit`, `node:http`, `createServer`, `listen`, roteamento manual, `JSON.stringify`, referência à tarefa na mensagem de commit |
+| 14 | Express e estrutura da API | Express, instalação, `app`, roteamento por método e caminho, `req`, `res`, `res.json`, parâmetro de rota, middleware, `express.json`, ordem de execução, `Router`, separação de rotas em módulo, dados em memória, template literal, `type`, `interface`, propriedade opcional, união de literais, Biome, formatação automática, análise estática, distinção entre verificação de tipo, formatação e análise estática, script de verificação, formatação na gravação do arquivo (r) |
 | 15 | HTML e React no navegador | HTML, marcação, elemento, tag, atributo, aninhamento, `<!DOCTYPE html>`, `<html>`, `<head>`, `<body>`, `<meta charset>`, `<title>`, `<div>`, `<h1>`, `<p>`, `<ul>`, `<li>`, `<table>`, `<script>`, DOM, manipulação imperativa do DOM, React por CDN, Babel no navegador, JSX, componente, propriedade de componente, `map` na renderização de lista, chave de lista, função de seta |
 | 16 | Ferramenta de build e consumo de API | limitação da compilação no navegador, Vite, `npm create vite`, servidor de desenvolvimento, substituição de módulo em tempo real (r), estrutura de pastas `api` e `web`, `fetch`, promessa, `async`, `await`, `try`/`catch`, `useState`, `useEffect`, array de dependências, estado de carregamento, estado de erro |
-| 17 | Origem única e publicação contínua | política de mesma origem, proxy de desenvolvimento, caminho relativo, `npm run build`, `dist`, arquivos estáticos no Express, ordem de middlewares, rota de reserva, roteamento no cliente, variável de ambiente, `process.env`, Render, comando de build, comando de início, publicação a partir da `main`, hibernação de serviço gratuito, tag de release |
+| 17 | Origem única e publicação contínua | política de mesma origem, proxy de desenvolvimento, caminho relativo, `npm run build`, `dist`, arquivos estáticos no Express, ordem de middlewares, variável de ambiente, `process.env`, Render, comando de build, comando de início, publicação a partir da `main`, hibernação de serviço gratuito, tag de release |
 
 ---
 
@@ -106,12 +106,12 @@ O marcador `(r)` indica conceito tratado em nível de reconhecimento. A ausênci
 
 | # | Tema | Conceitos |
 |---|---|---|
-| 18 | Modelagem relacional e banco de dados | banco de dados relacional, tabela, coluna, linha, tipo de dado, `INTEGER`, `TEXT`, `DATE`, `TIMESTAMP`, chave primária, chave estrangeira, integridade referencial, restrição `NOT NULL`, restrição `UNIQUE`, normalização (r), modelo lógico do Gefina, valor monetário em centavos, ponto flutuante e erro de arredondamento, PostgreSQL, Neon, projeto, branch de banco, ambiente de desenvolvimento e de produção, string de conexão |
+| 18 | Modelagem relacional e banco de dados | banco de dados relacional, tabela, coluna, linha, tipo de dado, `INTEGER`, `TEXT`, `DATE`, `TIMESTAMP`, chave primária, chave estrangeira, integridade referencial, restrição `NOT NULL`, restrição `UNIQUE`, normalização (r), modelo lógico do Gefina, valor monetário em centavos, ponto flutuante e erro de arredondamento, PostgreSQL, Neon, projeto, branch de banco, ambiente de desenvolvimento e de produção, string de conexão, documentação do modelo em Markdown, diretório `docs`, branch, `git branch`, `git switch -c`, `git switch`, `git push -u`, upstream, pull request, leitura do diff, `git diff`, merge, `git pull`, remoção de branch integrada (r), Conventional Commits, tipo de commit, escopo de commit |
 | 19 | Definição e manipulação de dados em SQL | SQL, DDL e DML, `CREATE TABLE`, `SERIAL`, `PRIMARY KEY`, `REFERENCES`, `INSERT INTO`, `VALUES`, `RETURNING`, `SELECT`, projeção de colunas, `WHERE`, operadores de comparação em SQL, `AND`, `OR`, `ORDER BY`, `ASC`, `DESC`, `LIMIT`, `UPDATE`, `DELETE`, cláusula ausente e alteração em massa |
 | 20 | Relacionamentos e agregação | `JOIN`, `INNER JOIN`, condição de junção, qualificação de coluna, alias de tabela, alias de coluna, `LEFT JOIN` (r), `COUNT`, `SUM`, `GROUP BY` (r), agregação sobre conjunto, script de seed, dados fictícios, idempotência do seed |
 | 21 | Acesso ao banco pela aplicação | driver de banco, `pg`, `Pool`, conexão, consulta parametrizada, `$1`, injeção de SQL, resultado sem tipo, `rows`, mapeamento de coluna para propriedade, `snake_case` e `camelCase`, camada de serviço, separação entre rota e acesso a dados, nomeação por sufixo de camada, variável de ambiente, `.env`, `.env.example`, `--env-file`, segredo em repositório público, rotação de credencial |
 | 22 | Listagem de faturas com dados reais | substituição dos dados em memória, listagem com `JOIN`, consulta por identificador, resposta de registro inexistente, tratamento de erro na rota, `try`/`catch` no servidor, `Intl.NumberFormat`, formatação de moeda em reais, conversão de centavos para reais, `Date`, `Intl.DateTimeFormat`, formato brasileiro de data, `for...of`, `push` |
-| 23 | Painel inicial e primeira agregação | requisito de visão consolidada, consulta de agregação para totais, endpoint de resumo, componente de cartão, composição de componentes, propriedades tipadas, rota de navegação no cliente, `reduce` (r), publicação da release |
+| 23 | Painel inicial e primeira agregação | requisito de visão consolidada, consulta de agregação para totais, endpoint de resumo, componente de cartão, composição de componentes, propriedades tipadas, segunda tela, navegação por recarregamento integral, evento, `onClick`, objeto de evento, evento sintético, `preventDefault`, API de histórico do navegador, `history.pushState`, evento `popstate`, React Router, `BrowserRouter`, `Routes`, `Route`, `Link`, roteamento no cliente, recarregamento de rota do cliente em produção, rota de reserva no Express, `reduce` (r), publicação da release |
 
 ---
 
@@ -128,7 +128,7 @@ O marcador `(r)` indica conceito tratado em nível de reconhecimento. A ausênci
 | 24 | Fundamentos de CSS e estrutura de layout | folha de estilo, `<link>`, seletor de tipo, classe, `id` (r), especificidade, cascata, herança, unidades `px`, `rem`, `%`, cor hexadecimal, propriedade customizada, `var()`, `:root`, tokens de cor e espaçamento, tipografia, fonte web, `@font-face` (r), `font-family`, `font-size`, `font-weight`, numeral tabular, `<header>`, `<nav>`, `<main>`, `<aside>`, `<footer>`, `<button>`, `<a>` |
 | 25 | Modelo de caixa e disposição de elementos | box model, `content`, `padding`, `border`, `margin`, `box-sizing`, colapso de margem (r), `display`, `block`, `inline`, `inline-block`, `flex`, eixo principal e eixo transversal, `flex-direction`, `justify-content`, `align-items`, `gap`, `flex-grow`, `position`, `relative`, `absolute`, `fixed`, estilização de tabela, estilização de barra lateral, pseudo-classe, `:hover`, `:focus-visible` |
 | 26 | Rotas de escrita e criação de registros | `POST`, corpo da requisição, `express.json` em uso, `INSERT ... RETURNING`, status `201`, `Location` (r), `PUT`, atualização parcial e total, `DELETE`, status `204`, idempotência (r), tratamento de erro por status, `400`, `404`, `500`, middleware de erro, REST Client, arquivo `.http` |
-| 27 | Formulários e diálogo modal | `<form>`, `<label>`, `<input>`, tipos de campo, `<select>`, `<option>`, `<textarea>` (r), atributo `name`, atributo `id` e associação de rótulo, campo controlado, `value`, `onChange`, evento sintético, `preventDefault`, `onSubmit`, `<dialog>`, `showModal`, `close`, foco e retorno de foco, estado de conteúdo do modal, confirmação de exclusão no mesmo modal, atualização da listagem após envio |
+| 27 | Formulários e diálogo modal | `<form>`, `<label>`, `<input>`, tipos de campo, `<select>`, `<option>`, `<textarea>` (r), atributo `name`, atributo `id` e associação de rótulo, campo controlado, `value`, `onChange`, `onSubmit`, envio padrão do formulário, `<dialog>`, `showModal`, `close`, foco e retorno de foco, estado de conteúdo do modal, confirmação de exclusão no mesmo modal, atualização da listagem após envio |
 | 28 | Validação de dados e verificação em tempo de execução | tipo em tempo de compilação e valor em tempo de execução, validação manual, verificação de presença, verificação de tipo, expressão regular, literal, classe de caracteres, quantificador, âncora, `test`, limite da validação artesanal, Zod, esquema, `parse`, `safeParse`, inferência de tipo a partir do esquema, mensagem de erro traduzida, validação no servidor e no cliente |
 | 29 | Testes automatizados da API | propósito do teste automatizado, teste de comportamento e teste de implementação, Vitest, `describe`, `it`, `expect`, asserção, execução da suíte, Supertest, requisição sem porta, preparo e limpeza de estado, `beforeEach`, teste de criação, teste de atualização, teste de remoção, teste de dado inválido, teste como rede de segurança |
 | 30 | Mapeamento objeto-relacional | limitação do acesso por driver, tipagem manual de resultado, ORM, Prisma, `schema.prisma`, modelo, mapeamento de nome de coluna, migração, histórico versionado de esquema, `migrate dev`, cliente gerado, tipagem derivada do esquema, `findMany`, `findUnique`, `create`, `update`, `delete`, relação declarada, `include`, `$queryRaw`, agregação preservada em SQL, suíte inalterada após substituição, publicação da release |
@@ -212,8 +212,8 @@ Relação dos pontos em que o curso constrói manualmente antes de adotar a ferr
 | 13 e 14 | servidor com `node:http` e roteamento manual | Express |
 | 15 | manipulação imperativa do DOM | React |
 | 15 e 16 | React por CDN com Babel no navegador | Vite |
-| 17 | rota de reserva e roteamento no cliente | React Router |
 | 21 a 30 | SQL cru por driver | Prisma |
+| 23 | navegação com a API de histórico do navegador | React Router |
 | 24, 25, 32 e 33 | CSS puro | Tailwind |
 | 28 | validação manual com expressão regular | Zod |
 | 38 | sal, derivação e comparação em tempo constante | bcrypt e argon2, nomeados |
@@ -226,16 +226,14 @@ Itens de emprego corrente na atividade profissional que o curso não adota, e a 
 
 | Aula | Item |
 |---|---|
-| 10 | Commitlint, Husky e Commitizen |
-| 12 | Insomnia e Postman |
 | 13 | `tsx` e `ts-node` |
+| 14 | ESLint e Prettier |
 | 16 | TanStack Query |
+| 18 | Commitlint, Husky e Commitizen |
 | 26 | Insomnia e Postman |
 | 27 | React Hook Form |
 | 29 | Jest, Playwright e Cypress |
 | 30 | Docker |
-| 32 | ESLint e Prettier |
-| 39 | JWT |
 | 38 | bcrypt e argon2 |
+| 39 | JWT |
 | 43 | índice de banco de dados |
-| 45 | perfis de execução e plano de consulta |
